@@ -10,14 +10,47 @@
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px var(--roboto);
     position: relative;
-    border: 3px solid transparent;
+    border: 4px solid transparent;
     border-radius: 4px;
 }
 
-.mr-4{
+.primary-button{
     background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
     transition: background .6s ease;
     box-shadow: var(--box-shadow);
+}
+
+.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.primary-button::after, .secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content:"";
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.secondary-button:hover{
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow)
+}
+
+p.para{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto)
 }
