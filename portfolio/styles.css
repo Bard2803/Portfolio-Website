@@ -1,3 +1,7 @@
+/* Global styling */
+
+@import url(global.css);
+
 /* VARIABLES */
 
 :root{
@@ -89,9 +93,6 @@ html, body{
     padding: 7rem 0;
 }
 
-.title-text{
-    font: normal bold 50px/ 72px var(--roboto)
-}
 
 
 /* END Banner area */
