@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+<!-- ===================================================================START BANNER================================================================ -->
+    <section class="site-banner">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6 col-md-12 site-title">
+            <h3 class="title-text text-greeting">Hey</h3>
+            <h1 class="title-text text-uppercase">I am Bard</h1>
+            <h4 class="title-text text-uppercase">Engineer interested in AI</h4>
+            <div class="site-buttons">
+            <div class="d-flex flex-row flex-wrap">
+                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire me</button>
+                <button type="button" class="btn button secondary-button text-uppercase">Get CV</button>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 banner-image">
+            <img alt="banner-image" class="img-fluid" src="/static/images/programmer.png">
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+<!-- ===================================================================END BANNER================================================================ -->
+
+
+<!-- ===================================================================START ABOUT AREA================================================================ -->
+
+    <section class="about-area">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="about-image">
+            <img src="/static/images/ent.jpg" alt="About me" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 about-title">
+            <h2 class="text uppercase pt-5">
+                <span>Let me</span>
+                <span>introduce</span>
+                <span>myself</span>
+            </h2>
+            <div class="paragraph py-4 w-75">
+                <p class="para">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <p class="para">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                </p>
+            </div>
+            <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+<!-- ===================================================================END ABOUT AREA================================================================ -->
+
+
+<!-- ===================================================================START BRAND AREA================================================================ -->
+
+<section class="brand-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <div class="first-row row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-brand">
+                            <img src="/static/images/dragon.png" alt="Brand-1 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <div class="experience-area">
+                    <div class="d-flex flex-row years-area">
+                        <h2 class="p-3 years">5</h2>
+                        <h2>
+                            <span>Years</span>
+                            <span>Experience</span>
+                            <span>Engineer</span>
+                        </h2>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap call-area">
+                        <span><i class="fa-solid fa-envelope fa-2x"></i></span>
+                        <div class="e-mail-now">
+                            <a href="#" class="text-uppercase h4 font-roboto">E-mail Now</a>
+                            <span class="font-roboto py-2">palusba@gmail.com</span>
+                        </div>
+                        <div class="bg-panel"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================================================================END BRAND AREA================================================================ -->
+
+<!--  ===================================================================START PROJECT AREA ===============================================================  -->
+
+<section class="project-area">
+    <div class="container">
+        <div class="project-title pb-5">
+            <h1 class="text-uppercase title-h1">Projects</h1>
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="active" id="btn1" data-filter="*">All</button>
+            <button type="button" data-filter=".popular" data-filter=".popular">Popular</button>
+            <button type="button" data-filter=".latest" data-filter=".latest">Latest</button>
+            <button type="button" data-filter=".following">Following</button>
+            <button type="button" data-filter=".upcoming">Upcoming</button>
+        </div>
+
+        <div class="row grid">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                <div class="our-project">
+                    <div class="img">
+                        <a class="test-popup-link" href="/static/images/projects/Robot_Floor_Cleaner.png">
+                            <img src="/static/images/projects/Robot_Floor_Cleaner.png" alt="portfolio-1" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4">
+                        <h4 class="text-uppercase">Cleaning Robots</h4>
+                        <span class="text-secondary">Latest, Portfolio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                <div class="our-project">
+                    <div class="img">
+                        <a class="test-popup-link" href="/cipher">
+                            <img src="/static/images/projects/cipher.png" alt="portfolio-2" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4">
+                        <h4 class="text-uppercase">Cipher</h4>
+                        <span class="text-secondary">Popular, Portfolio</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  =============================================================== END PROJECT AREA ==========================================================  -->
+
+{% endblock %}
