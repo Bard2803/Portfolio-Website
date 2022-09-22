@@ -6,12 +6,15 @@
 
 {% block main %}
 
-<form action="/cipher" method="get">
+<form action="/cipher" method="post">
     <div class="mb-3">
-        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Symbol" type="text">
-        <input autocomplete="off" class="form-control mx-auto w-auto" min="1" name="shares" placeholder="Shares" type="number">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="encrypted_message" placeholder="Symbol" type="text">
+        <input autocomplete="off" class="form-control mx-auto w-auto" name="shift" placeholder="Shares" type="number">
         <p></p>
         <button class="btn btn-primary" type="submit">Cipher</button>
+    </div>
+    <div class="mb-4">
+        {{ encrypted_message }}
     </div>
 </form>
 
