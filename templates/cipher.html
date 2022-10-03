@@ -6,16 +6,17 @@
 
 {% block main %}
 
-<form action="/cipher" method="post">
-    <div class="mb-3">
-        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="encrypted_message" placeholder="Symbol" type="text">
-        <input autocomplete="off" class="form-control mx-auto w-auto" name="shift" placeholder="Shares" type="number">
-        <p></p>
-        <button class="btn btn-primary" type="submit">Cipher</button>
-    </div>
-    <div class="mb-4">
-        {{ encrypted_message }}
-    </div>
-</form>
+<section class="cipher-section">
+    <form action="/cipher" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="encrypted_message" placeholder="Text" type="text">
+            <input autocomplete="off" class="form-control mx-auto w-auto" name="shift" placeholder="Shift" type="number">
+            <button class="btn button primary-button mr-4 text-uppercase" type="submit">Cipher</button>
+        </div>
+        <div class="encrypted-message">
+            <h4 class="e-m"> {{ encrypted_message }} </h4>
+        </div>
+    </form>
+</section>
 
 {% endblock %}

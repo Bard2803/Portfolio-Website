@@ -1,0 +1,14 @@
+.cipher-section .mb-3 button{
+    margin-top:30px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.cipher-section .encrypted-message {
+    margin-top:30px;
+    top: 50%;
+    left: 50%;
+}
