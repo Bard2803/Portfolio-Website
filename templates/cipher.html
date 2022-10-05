@@ -9,6 +9,10 @@
 <section class="cipher-section">
     <form action="/cipher" method="post">
         <div class="mb-3">
+            <p class="para"> Type the text that you want to cipher in the "text" field 
+                and the integer corresponding to how far in the alphabet you want to shift 
+                the letters in the "shift" field.
+            </p>
             <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="encrypted_message" placeholder="Text" type="text">
             <input autocomplete="off" class="form-control mx-auto w-auto" name="shift" placeholder="Shift" type="number">
             <button class="btn button primary-button mr-4 text-uppercase" type="submit">Cipher</button>

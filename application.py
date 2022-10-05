@@ -1,21 +1,18 @@
 from flask import Flask, flash, redirect, render_template, request, session
-from flask_session import Session
 import Cipher.Cipher as cr
 
-### TO RUN FLASK
-### python -m flask run 
 
-# Confugre the application
-app = Flask(__name__)
+# Configure the application. Cant be app !!! for Elastic Beanstalk has to be 'application'!
+application = app = Flask(__name__)
 
 
 
-@app.route("/")
+@application.route("/")
 def index():
     return render_template("index.html")
 
 
-@app.route("/cipher", methods=['GET', 'POST'])
+@application.route("/cipher", methods=['GET', 'POST'])
 def cipher():
     ''' Cipher project'''
 
@@ -32,3 +29,8 @@ def cipher():
         encrypted_message = cr.PlaintextMessage(message, shift).get_message_text_encrypted()
 
         return render_template("cipher.html", encrypted_message=encrypted_message)
+
+
+# Run the application
+if __name__ == "__main__":
+    application.run()
