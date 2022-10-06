@@ -76,7 +76,6 @@ button:hover
     font: normal bold 39px/ 40px var(--roboto);
 }
 
-
 .navbar_fixed{
     position: fixed;
     width: 100%;

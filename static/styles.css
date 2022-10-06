@@ -153,8 +153,18 @@ footer.footer-area .social a > i{
     color: var(--border-color);
 }
 
-footer.footer-area .social a:hover > i{
-    color: var(--primary-color);
+
+footer.footer-area .social a:hover .fa-github {
+    color: rgb(32, 30, 30);
+}
+footer.footer-area .social a:hover .fa-instagram {
+    color: rgb(138, 16, 77);
+}
+footer.footer-area .social a:hover .fa-youtube {
+    color: red;
+}
+footer.footer-area .social a:hover .fa-linkedin {
+    color:rgb(14, 91, 235);
 }
 
 
